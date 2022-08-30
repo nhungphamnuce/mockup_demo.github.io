@@ -1,0 +1,95 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.pagination{
+    z-index: -1;
+}
+
+.open-modal {
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    position: relative;
+}
+
+.open-modal:hover {
+    background-color: azure;
+}
+
+.model {
+    background-color: rgba(16, 16, 16, 0.432);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.model-inner {
+    position: relative;
+    width: 528px;
+    height: 408px;
+    background: #FFFFFF;
+    left: 30%;
+    z-index: 1;
+    margin-top: 10px;
+}
+
+.model_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+
+}
+
+.model_body {
+    padding: 20px;
+}
+#id,
+#taskname,
+#deadline,
+#status {
+    width: 400px;
+}
+
+.model_footer {
+    padding: -40px;
+    text-align: right;
+
+}
+
+#Cancel {
+    color: #3C6D73;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#Save {
+    background-color: #3C6D73;
+    border-radius: 5px;
+}
+
+.hide {
+    display: none;
+}
+
+#openModal:hover {
+    color: #FFFFFF;
+    background-color: #3C6D73;
+    border-radius: 5px;
+}
+
+#DeleModal:hover {
+    color: #FFFFFF;
+    background-color: #3C6D73;
+    border-radius: 5px;
+}

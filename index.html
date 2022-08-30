@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="/fonts/fontawesome-free-6.1.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+
+    <title>Task List</title>
+</head>
+
+<body>
+    <div class="header">
+        <p class="header-left">Task List</p>
+
+        <div class="header-right">
+            <input type="text" class="header__search-input" placeholder="Search task">
+            <button class="open-modal" id="btnAddTask">+ addTask</button>
+
+        </div>
+    </div>
+
+
+
+    <div class="model hide" id="myModal">
+        <div class="model-inner">
+            <div class="model_header">
+                <h3>ADD TASK</h3>
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="model_body"> 
+                <label for="id">ID</label><br>
+                <input type="number" id="id" placeholder="Nhập ID" value="" /> <br>
+
+                <label for="name">Task name</label><br>
+                <input type="text" id="taskname" placeholder="Nhập tên task" value="" /> <br>
+
+                <label for="dead">Dealine</label><br>
+                <input type="text" id="deadline"><br>
+
+                <label for="stt">Status</label><br>
+                <select id="status">
+                            <option value="doing" selected>Doing</option>
+                            <option value="done">Done</option>
+                            <option value="fail">Fail</option>
+                        </select><br><br>
+            </div>
+            <div class="model_footer">
+
+                <button onclick="Refresh()" id="Cancel">Cancel</button>
+                <button id="Save">Save</button>
+            </div>
+        </div>
+
+        
+    </div>
+    <div id="database" style="margin-top: 20px;">
+
+    </div>
+
+
+    <div class="footer">
+        <span>
+                Showing
+                <select name="" id="" class="page-select">
+                    <option value="12" selected>12</option>											
+                </select>
+                of 100 entries
+            </span>
+
+        <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">&laquo;</a></li> &nbsp;
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item"><a class="page-link" href="#">6</a></li>
+            <li class="page-item"><a class="page-link" href="#">7</a></li> &nbsp;
+            <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+        </ul>
+    </div>
+</body>
+<script src="main.js"></script>
+
+
+</html>
